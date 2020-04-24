@@ -5,9 +5,10 @@ position: fixed;
 z-index: 1;
 top: 0;
 left: 0;
-background: black;
+
 overflow: hidden;
 padding-top: 20px;
+background: black;
 }
 
 #main-doc{
@@ -29,5 +30,10 @@ cursor: pointer;
 }
 li{
     list-style-type: none;
+}
+@media only screen and (min-width:480px){
+    #navbar{
+        background-color: grey;
+    }
 }
 
