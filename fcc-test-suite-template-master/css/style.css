@@ -1,39 +1,47 @@
-#navbar{
-height: 100%;
-width:160px;
-position: fixed;
-z-index: 1;
-top: 0;
-left: 0;
-
-overflow: hidden;
-padding-top: 20px;
-background: black;
+#navbar {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    padding-top: 25px;
+    background: black;
 }
 
-#main-doc{
-    margin-left: 200px;
-    font-size: 17px;
-    padding: 0px 10px;
-
+#main-doc {
+    font-size: 20px;
+    margin-left: 300px;
 }
-#navbar a{
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
+
+#navbar a {
+    display: block;
+    padding: 8px 10px 8px 20px;
     font-size: 20px;
     color: white;
-    display: block;
-}
-#navbar a:hover{
-color: yellow;
-cursor: pointer;
-}
-li{
-    list-style-type: none;
-}
-@media only screen and (min-width:480px){
-    #navbar{
-        background-color: grey;
-    }
+    text-decoration: none;
 }
 
+#navbar a:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        background-color: yellow;
+    }
+
+    #navbar a {
+        color: black;
+    }
+
+    #navbar a:hover {
+        color: blue;
+    }
+}
